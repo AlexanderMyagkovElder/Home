@@ -2,13 +2,13 @@
 # которыми можно выдать ЗП.
 # И сколько, и каких бухгалтер выдаст 25 рублевых купюр,  10 рублевых, 3 рублевых и 1 рублевых
 
-salary=int(input('Введите сумму зарплаты: '))
-on_25=int(salary/25)
-salary=salary%25
-on_10=int(salary/10)
-salary=salary%10
-on_3=int(salary/3)
-on_1=salary%3
-min_cash=on_25+on_10+on_3+on_1
+salary = int(input('Введите сумму зарплаты: '))
+on_25 = int(salary / 25)
+salary = salary % 25
+on_10 = int(salary / 10)
+salary = salary % 10
+on_3 = int(salary / 3)
+on_1 = salary % 3
+min_cash = on_25 + on_10 + on_3 + on_1
 print(f'Минимальное количество купюр - {min_cash}\n25-рублевых купюр - {on_25}\n10-рублевых купюр - {on_10}')
 print(f'3-рублевых купюр - {on_3}\n1-рублевых купюр - {on_1}')
