@@ -7,10 +7,11 @@ b = int(input(('Enter the numbers of columns: ')))
 array1 = []
 sum_rows = []
 for i in range(b):
+    array1.append(list())
     sum_1 = 0
     for j in range(a):
         array1.append(int(random.randint(1, 10)))
-        sum_1 += array1[j]
+        sum_1 += array1[i][j]
     sum_rows.append(sum_1)
 print(array1)
 print(sum_rows)
