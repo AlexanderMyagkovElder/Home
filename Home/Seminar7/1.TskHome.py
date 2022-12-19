@@ -10,7 +10,7 @@ index_day = int(input('Enter day of week: (from 1 to 7): '))
 fill_schedule(list_key[index_day])
 while choice_user > 0 and choice_user < 4:
     if index_day=='':
-        index_day = int(input('Enter day of week: (from 1 to 7): ')) - 1
+        index_day = int(input('Enter day of week: (from 1 to 7): '))
     if choice_user == 1:
         with open(list_key[index_day], 'r', encoding='utf-8') as your_day:
             print(your_day.read())
