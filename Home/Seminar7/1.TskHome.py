@@ -2,11 +2,11 @@ def fill_schedule(day_name):  # заполнение дня недели вре�
     with open(day_name, 'a', encoding='utf-8') as day_name_name:
         for i in range(6, 24):
             day_name_name.writelines(f'{i}:00\n')
-list_key = {0: 'Monday.txt', 1: 'Tuesday.txt', 2: 'Wednesday.txt', 3: 'Thursday',
-            4: 'Friday.txt', 5: 'Saturday.txt', 6: 'Sunday.txt'}
+list_key = {1: 'Monday.txt', 2: 'Tuesday.txt', 3: 'Wednesday.txt', 4: 'Thursday',
+            5: 'Friday.txt', 6: 'Saturday.txt', 7: 'Sunday.txt'}
 choice_user = int(input('Choose,what you want to do with your schedule: \nprint 1 - for read, '
                         'print 2 - for writing, print 3 - for changing, \n0 - for exit: '))
-index_day = int(input('Enter day of week: (from 1 to 7): ')) - 1
+index_day = int(input('Enter day of week: (from 1 to 7): '))
 fill_schedule(list_key[index_day])
 while choice_user > 0 and choice_user < 4:
     if index_day=='':
