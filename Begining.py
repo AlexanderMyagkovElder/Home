@@ -49,26 +49,6 @@
 import math
 import random
 
-
-def count_banknotes(count25, salary):
-    count10, count3, count1 = 0, 0, 0
-
-    salary -= count25 * 25
-    count10 = salary // 10
-    salary -= count10 * 10
-    count3 = salary // 3
-    count1 = salary - count3 * 3
-
-
-    total_count = count1 + count3 + count10 + count25
-    summary = (f'Минимальное количество купюр, которыми можно выдать зарплату - {total_count}.\n'
-               f'25 рублевыми купюрами - {count25} шт.\n'
-               f'10 рублевыми купюрами - {count10} шт.\n'
-               f'3 рублевыми купюрами - {count3} шт.\n'
-               f'1 рублевыми купюрами - {count1} шт.')
-
-    return total_count, summary
-
 # s='ronaldo'
 # x='fhjg'
 # print(' '.join([s,x]))
@@ -76,7 +56,7 @@ def count_banknotes(count25, salary):
 # put your motherfucker hands and follow
 # me'''
 # print(s)
-
+#
 
 # x=random.triangular(1,5)
 # print(x)
@@ -85,6 +65,12 @@ def count_banknotes(count25, salary):
 # random_index = random.randint(0, len(string) - 1)
 # char = string[random_index]
 # print(char)
+
+# f = open('D:/study/Python/pythonProject/Home/test.txt', 'r')
+# f.close()
+# with open ('test.txt','r') as f:
+#     print(f.read(5))
+
 
 # 3.5 Вводим любую строку и нужно посчитать кол-во символов в верхнем регистре
 
@@ -96,3 +82,24 @@ def count_banknotes(count25, salary):
 
 
 # 3.8 Написать программу, которая скажет в веденной строке индекс второго символа "в"
+#
+# day=int(input("enter for 1 to 3: "))
+# list_of_week = {1: 'first.txt', 2: 'second.txt', 3: 'third.txt'}
+# with open(list_of_week[day],'a',encoding='utf-8') as what_s :
+#     what_s.writelines('1')
+# with open(list_of_week[day],'a',encoding='utf-8') as what_s :
+#     what_s.writelines('2')
+#     print(what_s.readline)
+#
+# class Time:
+#     def __init__(self,minutes,seconds):
+#         self.mi
+# import request
+# response= request.get('http://mail.ru')
+# print(response)
+
+import requests
+
+response = requests.get('https://mail.ru')
+print(response)
+
