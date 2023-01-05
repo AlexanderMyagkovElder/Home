@@ -97,9 +97,31 @@ import random
 # import request
 # response= request.get('http://mail.ru')
 # print(response)
+import re
+# x=5
+# s='x *8'
+# s1=eval(s)
+# print(s1.__sizeof__())
+# z=[2,3,4,5,6,7]
+# xc=['cris','crisht','cr7','cristiano']
+# xc.sort(key=lambda y:y[-2])
+# xd={'kir','ol','sir','ol','as'}
+# print(xd)
 
-import requests
+from datetime import datetime as dt
 
-response = requests.get('https://mail.ru')
-print(response)
+# time_now=dt.now().strftime('%H:%M')
+# print(time_now)
 
+class Soup():
+    def Is_it(self,component):
+        if component=='свекла':
+            print('borszcz')
+        elif component=='капуста':
+            print('szczii')
+        elif component=='горох':
+            print('peasing soup')
+        else:
+            print(f'just water with {component}')
+a=Soup()
+a.Is_it('боб')
